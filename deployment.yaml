@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: mydeployment
+spec:
+ strategy:
+   type: RollingUpdate
+ replicas: 2
+ selector:
+   matchLabels:
+     app: node
+ template:
+   metadata:
+    name: myPod
+    labels:
+      app: node
+   spec:
+    containers:
+    - name: myweb
+      image: shailbrox/nodejs
+      ports:
+      - containerPort: 80
+
