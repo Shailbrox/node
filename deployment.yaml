@@ -19,5 +19,5 @@ spec:
     - name: myweb
       image: shailbrox/nodejs
       ports:
-      - containerPort: 80
+      - containerPort: 3000
 
