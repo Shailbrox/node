@@ -16,7 +16,7 @@ spec:
       app: node
    spec:
     containers:
-    - name: myweb
+    - name: nodeapp
       image: shailbrox/nodejs
       ports:
       - containerPort: 3000
